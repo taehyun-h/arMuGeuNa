@@ -1,8 +1,10 @@
 package woongs.armugeuna;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 
 import com.astuetz.PagerSlidingTabStrip;
 //import android.view.Menu;
@@ -29,6 +31,10 @@ public class MainActivity extends FragmentActivity {
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         // Attach the view pager to the tab strip
         tabsStrip.setViewPager(viewPager);
+
+        //background color black
+        tabsStrip.setBackgroundColor(Color.parseColor("#FF000000"));
+        Log.w("color - ", String.valueOf(Color.parseColor("#FF000000")));
     }
 
     /*

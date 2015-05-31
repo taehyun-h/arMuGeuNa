@@ -7,8 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.astuetz.PagerSlidingTabStrip;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter implements PagerSlidingTabStrip.IconTabProvider {
-    final int PAGE_COUNT = 4;
-    private int tabIcons[] = {R.drawable.icon, R.drawable.icon, R.drawable.icon, R.drawable.icon};
+    final int PAGE_COUNT = 3;
+    private int tabIcons[] = {R.drawable.tabicon1, R.drawable.tabicon2, R.drawable.tabicon3};
 
     public SampleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
